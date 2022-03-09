@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+:root {
+  --body-bg: #23252c;
+  --primary-text-clr: #f5f5f5;
+  --secondary-text-clr: #f3bf99;
+  --card-clr: #1a1b21;
+  --footer-clr: #161619;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-text-clr);
+  background-color: var(--body-bg);
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 2px;
+}
+
+h2 {
+  font-size: 0.8rem;
+}
+
+h6 {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--secondary-text-clr);
+}
+
+p {
+  font-size: 0.6rem;
+  line-height: 0.85rem;
+  margin-top: 5px;
+  color: #dcdcdc;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  padding: 7px;
+  font-size: 0.7rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: var(--card-clr);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.profile-photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainContent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.profile-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 12px;
+  margin-right: 7px;
+}
+
+.description > p {
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--footer-clr);
+}
+
+.footer .icon {
+  width: 25px;
+}
